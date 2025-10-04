@@ -2,11 +2,11 @@ PROYECTO: Predicción del desempeño en las Pruebas Saber Pro
 
 INTEGRANTES DEL EQUIPO
 
-| Nombre Completo        			    | Cédula         | Programa Académico                 |
+| Nombre Completo        			 | Cédula         | Programa Académico                 |
 |---------------------------------|----------------|------------------------------------|
-| Maria Camila Bravo     			    | 1085943131     | Bioingeniería					            |            
-| Sebastian Bedoya Restrepo      	| 1040048038     | Ingeniería de Sistemas			        |                    
-| Jasmin Juliana Jaramillo Tapias | 1017163639     | Ingeniería de Sistemas 			      |
+| Maria Camila Bravo     			 | 1085943131     | Bioingeniería					       |            
+| Sebastian Bedoya Restrepo       | 1040048038     | Ingeniería de Sistemas			    |                    
+| Jasmin Juliana Jaramillo Tapias | 1017163639     | Ingeniería de Sistemas 			    |
 
 DESCRIPCIÓN DEL PROYECTO
 
@@ -19,12 +19,14 @@ en las pruebas Saber Pro, categorizado en cuatro niveles:
 - Medio-Alto
 - Alto
 
-REQUISITOS PREVIOS
+EJECUCIÓN DEL NOTEBOOK
 
-Antes de ejecutar el notebook, asegúrate de tener instalado:
-
-- Python ≥ 3.8
-- Jupyter Notebook o Google Colab
+- Tener descargado el archivo kaggle.json (API KEY)
+- Abrir el notebook 01 - exploración.ipynb en Google Colab
+- Ejecuta cada una de las celdas, el orden de la información esta estructurada así:
+   * Cargar Datos
+   * FUNCIONES
+   * Visualización
 - Librerías necesarias: pandas, numpy, scikit-learn, matplotlib, seaborn, kaggle
 
 CONFIGURACIÓN DE LA API KEY DE KAGGLE
@@ -44,15 +46,6 @@ SaberPro-Classifier/
 │
 ├── README.md
 ├── 01 - exploración.ipynb
-
-EJECUCIÓN DEL NOTEBOOK
-
-1. Abre el notebook 01 - exploración.ipynb.
-2. Verifica que tengas el archivo kaggle.json.
-3. Ejecuta cada una de las celdas, el orden de la información esta estructurada así:
-   - Cargar Datos
-   - FUNCIONES
-   - Visualización
 
 CRÉDITOS
 
@@ -80,6 +73,9 @@ detallan las etapas y procedimientos principales:
      cantidad de registros no nulos.
    - encabezado(): muestra las primeras filas del dataset con estilo visual
      personalizado.
+   - visualizacion_datos(): permite explorar rápidamente la relación entre una
+     variable categórica y el rendimiento académico, identificando patrones o diferencias
+     en la distribución de las categorías respecto al desempeño global
 
 4. Análisis Exploratorio de Datos (EDA)
    - Análisis descriptivo de variables numéricas mediante `describe()`.

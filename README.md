@@ -134,7 +134,9 @@ tiene como objetivo limpiar, transformar y preparar los datos del conjunto de en
   OneHotEncoder → para variables categóricas nominales (E_PRGM_ACADEMICO, E_PRGM_DEPARTAMENTO).
 - Se ejecutar el preprocesador y se confirma que las variables se han codificado correctamente.
 
-9. Se Guarda la configuración del preprocesamiento
+9. Se Guarda la configuración del preprocesamiento en Drive
+https://drive.google.com/drive/u/0/folders/1U5V5C4j0vq3CaIkGxrKEA6KXC82MaFme
+(Estan indicados los permisos para el grupo de trabajo, para el Profesor Raúl Ramos y para el monitor Jonathan Granda)
    
 Usuario de Kaggle: https://www.kaggle.com/jasminjaramillo
 

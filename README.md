@@ -42,12 +42,8 @@ SaberPro-Classifier/
 EJECUCIÓN DEL NOTEBOOK
 
 - Tener descargado el archivo kaggle.json (API KEY)
-- Abrir el notebook 01 - exploración.ipynb en Google Colab
-- Ejecuta cada una de las celdas, el orden de la información esta estructurada así:
-   * Cargar Datos
-   * FUNCIONES
-   * Visualización
-- Librerías necesarias: pandas, numpy, scikit-learn, matplotlib, seaborn, kaggle
+- Abrir los notebooks en Google Colab
+- Ejecuta cada una de las celdas, el orden de la información esta estructurada de manera secuencial
 
 -----ENTREGA 1----------
 

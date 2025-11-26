@@ -37,7 +37,8 @@ SaberPro-Classifier/
 ├── README.md
 ├── 01 - exploración.ipynb
 ├── 02 - preprocesado.ipynb
-
+├── 03 - XGBoost_y_SGDClassifier.ipynb
+├── 04 - KNN_ y_Random_Forest.ipynb
 
 EJECUCIÓN DEL NOTEBOOK
 

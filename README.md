@@ -39,6 +39,7 @@ SaberPro-Classifier/
 ├── 02 - preprocesado.ipynb
 ├── 03 - XGBoost_y_SGDClassifier.ipynb
 ├── 04 - KNN_ y_Random_Forest.ipynb
+├── 99 - modelo solución.ipynb
 
 EJECUCIÓN DEL NOTEBOOK
 

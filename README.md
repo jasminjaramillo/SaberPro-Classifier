@@ -142,6 +142,62 @@ Usuario de Kaggle: https://www.kaggle.com/jasminjaramillo
 
 Link video: https://www.youtube.com/watch?v=xAtlrqK1gHQ
 
+-----ENTREGA FINAL----------
+
+Los notebooks 
+* 03 - XGBoost_y_SGDClassifier.ipynb
+* 04 - KNN_ y_Random_Forest.ipynb
+* 99 - modelo solución.ipynb
+
+Siguen la siguiente estructura y se deben de ejecutar en el orden en que cada uno fue desarrollado:
+
+1. Carga de datos (train y test) desde Kaggle o Drive
+   Se realiza mediante API de Kaggle
+
+2. Preprocesamiento completo
+Incluye:
+   Imputación de valores faltantes
+      Variables categóricas → moda
+      Variables numéricas → media
+   Codificación y mapeo de variables ordinales y binarias
+   Separación correcta de ID y target
+   División en X y y
+   train_test_split() para validación interna
+   Construcción de pipelines con:
+      ColumnTransformer
+      Escalado
+      Codificación OneHot
+      Modelos (XGB, SGD, KNN y RF)
+
+3. Optimización de hiperparámetros con Optuna
+
+      Para realizar el entrenamiento, se acelero el proceso con Optuna, en donde se usaron estrategias como:
+         Submuestreo del dataset
+         Menor número de trials
+         StratifedKFold con pocas particiones
+
+4. Entrenamiento y evaluación final
+
+Cada modelo se entrena con sus best_params y se evalúa con:
+   Accuracy
+   F1 score (weighted)
+   Precision
+   Recall
+   Classification report
+
+NOTA: En el notebook final (99 - modelo solución.ipynb) se selecciona el modelo ganador según Accuracy, que es el criterio de la competencia y únicamente este continua con el siguiente flujo:
+
+5. Reentrena el modelo usando el 100% del dataset de entrenamiento y predice sobre test.csv.
+
+6. Arma un Dataframe con los valores convertidos de los valores numéricos a categorías originales:
+bajo, medio-bajo, medio-alto, alto con su correspondiente ID
+
+7. Generación del archivo submission.csv 
+
+   Guarda automáticamente el archivo en Google Drive 
+   (Estan indicados los permisos para el grupo de trabajo, para el Profesor Raúl Ramos y para el monitor Jonathan Granda)
+
+Link video: 
 
 CRÉDITOS
 
